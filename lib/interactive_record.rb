@@ -60,8 +60,8 @@ class InteractiveRecord
       SELECT * FROM #{self.table_name}
       WHERE ? = ?
     SQL
-    tea = DB[:conn].execute(sql, send(hash.keys.first), hash.values.first)
     binding.pry
+    DB[:conn].execute(sql, send(hash.keys.first), hash.values.first)
   end
 
 end
