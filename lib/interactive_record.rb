@@ -62,7 +62,7 @@ class InteractiveRecord
       WHERE #{hash.keys.first.to_s} = ?
     SQL
     tea = DB[:conn].execute(sql, hash.values.first)
-    binding.pry
+    #binding.pry
   end
 
 end
