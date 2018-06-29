@@ -38,4 +38,8 @@ class InteractiveRecord
     values.join(", ")
   end
 
+  de save
+
+end
+
 end
