@@ -60,7 +60,7 @@ class InteractiveRecord
       SELECT * FROM #{self.table_name}
       WHERE ? = ?
     SQL
-    DB[:conn].execute(sql, hash[0], hash[0].value)
+    DB[:conn].execute(sql, hash.keys.first, hash.values.first)
   end
 
 end
