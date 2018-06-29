@@ -61,6 +61,7 @@ class InteractiveRecord
       WHERE ? = ?
     SQL
     tea = DB[:conn].execute(sql, send(hash.keys.first), hash.values.first)
+    binding.pry
   end
 
 end
