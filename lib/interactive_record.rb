@@ -61,7 +61,7 @@ class InteractiveRecord
       SELECT * FROM #{self.table_name}
       WHERE ? = ?
     SQL
-    binding.pry
+    #binding.pry
     DB[:conn].execute(sql, hash.keys.first.to_s, hash.values.first)
   end
 
